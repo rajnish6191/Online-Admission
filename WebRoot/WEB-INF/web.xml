@@ -1,0 +1,1052 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+	<servlet>
+		<description>
+			This is the description of my J2EE component
+		</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>InitServlet</servlet-name>
+		<servlet-class>com.admission.util.InitServlet</servlet-class>
+		<init-param>
+			<param-name>config</param-name>
+			<param-value>/WEB-INF/config/system.properties</param-value>
+		</init-param>
+		<load-on-startup>0</load-on-startup>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>InitServlet</servlet-name>
+		<url-pattern>/InitServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>InitServlet</servlet-name>
+		<url-pattern>/InitServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>LoginAction</servlet-name>
+		<servlet-class>com.admission.action.LoginAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>LogoutAction</servlet-name>
+		<servlet-class>com.admission.action.LogoutAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>AddProgrammeAction</servlet-name>
+		<servlet-class>com.admission.action.AddProgrammeAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ChangePasswordAction</servlet-name>
+		<servlet-class>com.admission.action.ChangePasswordAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>AddDepartmentAction</servlet-name>
+		<servlet-class>com.admission.action.AddDepartmentAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>RegisterAction</servlet-name>
+		<servlet-class>com.admission.action.RegisterAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ViewProfileAction</servlet-name>
+		<servlet-class>com.admission.action.ViewProfileAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>UpdateUserProfileAction</servlet-name>
+		<servlet-class>com.admission.action.UpdateUserProfileAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ViewDepartmentNameAction</servlet-name>
+		<servlet-class>com.admission.action.ViewDepartmentNameAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ViewSearchEmployees</servlet-name>
+		<servlet-class>com.admission.action.ViewSearchEmployeesAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>DeleteEmployeeAction</servlet-name>
+		<servlet-class>com.admission.action.DeleteEmployeeAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>EmpDatewiseSearch</servlet-name>
+		<servlet-class>com.admission.action.EmpDatewiseSearchAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>EmployeeSearchAction</servlet-name>
+		<servlet-class>com.admission.action.EmployeeSearchAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>viewDepartments</servlet-name>
+		<servlet-class>com.admission.action.viewDepartmentsAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>DeleteDepartment</servlet-name>
+		<servlet-class>com.admission.action.DeleteDepartmentAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>EmployeeTimeRecord</servlet-name>
+		<servlet-class>com.admission.action.EmployeeTimeRecordAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>SetHolidaysAction</servlet-name>
+		<servlet-class>com.admission.action.SetHolidaysAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ViewHolidaysAction</servlet-name>
+		<servlet-class>com.admission.action.ViewHolidaysAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>UpdateHolidaysAction</servlet-name>
+		<servlet-class>com.admission.action.UpdateHolidaysAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>UpdateHolidays</servlet-name>
+		<servlet-class>com.admission.action.UpdateHolidaysAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ViewUpdateHoliday</servlet-name>
+		<servlet-class>com.admission.action.ViewUpdateHolidayAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>DeleteHolidays</servlet-name>
+		<servlet-class>com.admission.action.DeleteHolidaysAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ViewAttendanceDepartment</servlet-name>
+		<servlet-class>com.admission.action.ViewAttendanceDepartmentAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ViewDeptAttendanceAction</servlet-name>
+		<servlet-class>com.admission.action.ViewDeptAttendanceAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>EmployeeIdwiseAttendance</servlet-name>
+		<servlet-class>com.admission.action.EmployeeIdwiseAttendanceAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ApplyLeaveAction</servlet-name>
+		<servlet-class>com.admission.action.ApplyLeaveAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ViewLeavesAction</servlet-name>
+		<servlet-class>com.admission.action.ViewLeavesAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>LeaveAcceptAction</servlet-name>
+		<servlet-class>com.admission.action.LeaveAcceptAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ViewEmpLeaveAction</servlet-name>
+		<servlet-class>com.admission.action.ViewEmpLeaveAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>DeleteLeaves</servlet-name>
+		<servlet-class>com.admission.action.DeleteLeavesAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>GenerateSalaryAction</servlet-name>
+		<servlet-class>com.admission.action.GenerateSalaryAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ViewDeptSal</servlet-name>
+		<servlet-class>com.admission.action.ViewDeptSalAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ComposeMail</servlet-name>
+		<servlet-class>com.admission.action.ComposeMailAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>SendMailAction</servlet-name>
+		<servlet-class>com.admission.action.SendMailAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>OutboxAction</servlet-name>
+		<servlet-class>com.admission.action.OutboxAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>DeleteMails</servlet-name>
+		<servlet-class>com.admission.action.DeleteMailsAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>SalaryCalculate</servlet-name>
+		<servlet-class>com.admission.action.SalaryCalculateAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ViewUpdateEmployee</servlet-name>
+		<servlet-class>com.admission.action.ViewUpdateEmployeeAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>UpdateEmployee</servlet-name>
+		<servlet-class>com.admission.action.UpdateEmployeeAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>CalculateSalaryAction</servlet-name>
+		<servlet-class>com.admission.action.CalculateSalaryAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ViewMonthlySalary</servlet-name>
+		<servlet-class>com.admission.action.ViewMonthlySalaryAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ViewSalaryAction</servlet-name>
+		<servlet-class>com.admission.action.ViewSalaryAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ExportXLS</servlet-name>
+		<servlet-class>com.admission.export.ExportXLS</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ViewMailBody</servlet-name>
+		<servlet-class>com.admission.action.ViewMailBodyAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>DeptRegister</servlet-name>
+		<servlet-class>com.admission.action.DeptRegisterAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>A</servlet-name>
+		<servlet-class>com.admission.action.A</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ViewEmployeeSalaryAction</servlet-name>
+		<servlet-class>com.admission.action.ViewEmployeeSalaryAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ViewBranchesAction</servlet-name>
+		<servlet-class>com.admission.action.ViewBranchesAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ViewSubjectsAction</servlet-name>
+		<servlet-class>com.admission.action.ViewSubjectsAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ViewUpdateBranchesAction</servlet-name>
+		<servlet-class>com.admission.action.ViewUpdateBranchesAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ViewUpdateCoursesAction</servlet-name>
+		<servlet-class>com.admission.action.ViewUpdateCoursesAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ViewBranchwiseStudentsAction</servlet-name>
+		<servlet-class>com.admission.action.ViewBranchwiseStudentsAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ViewBranchStudentListAction</servlet-name>
+		<servlet-class>com.admission.action.ViewBranchStudentListAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>StudentIdwiseAaction</servlet-name>
+		<servlet-class>com.admission.action.StudentIdwiseAaction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ViewCoursesAction</servlet-name>
+		<servlet-class>com.admission.action.ViewCoursesAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>UpdateBranchesAction</servlet-name>
+		<servlet-class>com.admission.action.UpdateBranchesAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>UpdateCoursesAction</servlet-name>
+		<servlet-class>com.admission.action.UpdateCoursesAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ViewRegCourseAction</servlet-name>
+		<servlet-class>com.admission.action.ViewRegCourseAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ViewRegBranchAction</servlet-name>
+		<servlet-class>com.admission.action.ViewRegBranchAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>AddCourseAction</servlet-name>
+		<servlet-class>com.admission.action.AddCourseAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ViewCourseDetails</servlet-name>
+		<servlet-class>com.admission.action.ViewCourseDetails</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>AddBranchAction</servlet-name>
+		<servlet-class>com.admission.action.AddBranchAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>StudentRegisterAction</servlet-name>
+		<servlet-class>com.admission.action.StudentRegisterAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ParentRegistrationAction</servlet-name>
+		<servlet-class>com.admission.action.ParentRegistrationAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>AddResultAction</servlet-name>
+		<servlet-class>com.admission.action.AddResultAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ViewResultAction</servlet-name>
+		<servlet-class>com.admission.action.ViewResultAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>StudentClassTimeRecord</servlet-name>
+		<servlet-class>com.admission.action.StudentClassTimeRecord</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>StudentSearchAction</servlet-name>
+		<servlet-class>com.admission.action.StudentSearchAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ViewStudentBranch</servlet-name>
+		<servlet-class>com.admission.action.ViewStudentBranch</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>CounslerRegisterAction</servlet-name>
+		<servlet-class>com.admission.action.CounslerRegisterAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ViewRegistrationRequestStudents</servlet-name>
+		<servlet-class>com.admission.action.ViewRegistrationRequestStudents</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>DeleteStudentsAction</servlet-name>
+		<servlet-class>com.admission.action.DeleteStudentsAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>UpdateStudentStatusAction</servlet-name>
+		<servlet-class>com.admission.action.UpdateStudentStatusAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ViewCounslersAction</servlet-name>
+		<servlet-class>com.admission.action.ViewCounslersAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>AddStudyCenterAction</servlet-name>
+		<servlet-class>com.admission.action.AddStudyCenterAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ViewStudyCenter</servlet-name>
+		<servlet-class>com.admission.action.ViewStudyCenter</servlet-class>
+	</servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewProgrammeAction</servlet-name>
+    <servlet-class>com.admission.action.ViewProgrammeAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddStudyCenterProgrammesAction</servlet-name>
+    <servlet-class>com.admission.action.AddStudyCenterProgrammesAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddViewStudyCenterProgrammesAction</servlet-name>
+    <servlet-class>com.admission.action.AddViewStudyCenterProgrammesAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewStudyCenterProgrammes</servlet-name>
+    <servlet-class>com.admission.action.ViewStudyCenterProgrammes</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddUniversityNewsAction</servlet-name>
+    <servlet-class>com.admission.action.AddUniversityNewsAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewUniversityNewsAction</servlet-name>
+    <servlet-class>com.admission.action.ViewUniversityNewsAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewStudyCentersProgrammes</servlet-name>
+    <servlet-class>com.admission.action.ViewStudyCentersProgrammes</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddAdmissionDetailsAction</servlet-name>
+    <servlet-class>com.admission.action.AddAdmissionDetailsAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewProgrammeeStudycenters</servlet-name>
+    <servlet-class>com.admission.action.ViewProgrammeeStudycenters</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SelectProgrammeAdmissionStudent</servlet-name>
+    <servlet-class>com.admission.action.SelectProgrammeAdmissionStudent</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewAdmissionsSelectProgrammes</servlet-name>
+    <servlet-class>com.admission.action.ViewAdmissionsSelectProgrammes</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewStudentCertificates</servlet-name>
+    <servlet-class>com.admission.action.ViewStudentCertificates</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CertificatesVerificationaction</servlet-name>
+    <servlet-class>com.admission.action.CertificatesVerificationaction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>StudyCenterAllotedmentAction</servlet-name>
+    <servlet-class>com.admission.action.StudyCenterAllotedmentAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewStudyCenterAllotements</servlet-name>
+    <servlet-class>com.admission.action.ViewStudyCenterAllotements</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewStudyCenterAllotements1</servlet-name>
+    <servlet-class>com.admission.action.ViewStudyCenterAllotements1</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewStudentAllotmentOrder</servlet-name>
+    <servlet-class>com.admission.action.ViewStudentAllotmentOrder</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Example</servlet-name>
+    <servlet-class>com.admission.action.Example</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<servlet-mapping>
+		<servlet-name>LoginAction</servlet-name>
+		<url-pattern>/LoginAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>LogoutAction</servlet-name>
+		<url-pattern>/LogoutAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ChangePasswordAction</servlet-name>
+		<url-pattern>/ChangePasswordAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AddDepartmentAction</servlet-name>
+		<url-pattern>/AddDepartmentAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>RegisterAction</servlet-name>
+		<url-pattern>/RegisterAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ViewProfileAction</servlet-name>
+		<url-pattern>/ViewProfileAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UpdateUserProfileAction</servlet-name>
+		<url-pattern>/UpdateUserProfileAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ViewDepartmentNameAction</servlet-name>
+		<url-pattern>/ViewDepartmentNameAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ViewSearchEmployees</servlet-name>
+		<url-pattern>/ViewSearchEmployees</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>DeleteEmployeeAction</servlet-name>
+		<url-pattern>/DeleteEmployeeAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>EmpDatewiseSearch</servlet-name>
+		<url-pattern>/EmpDatewiseSearch</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>EmployeeSearchAction</servlet-name>
+		<url-pattern>/EmployeeSearchAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>viewDepartments</servlet-name>
+		<url-pattern>/viewDepartments</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>DeleteDepartment</servlet-name>
+		<url-pattern>/DeleteDepartment</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>EmployeeTimeRecord</servlet-name>
+		<url-pattern>/EmployeeTimeRecord</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SetHolidaysAction</servlet-name>
+		<url-pattern>/SetHolidaysAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ViewHolidaysAction</servlet-name>
+		<url-pattern>/ViewHolidaysAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UpdateHolidaysAction</servlet-name>
+		<url-pattern>/UpdateHolidaysAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UpdateHolidays</servlet-name>
+		<url-pattern>/UpdateHolidays</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ViewUpdateHoliday</servlet-name>
+		<url-pattern>/ViewUpdateHoliday</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>DeleteHolidays</servlet-name>
+		<url-pattern>/DeleteHolidays</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ViewAttendanceDepartment</servlet-name>
+		<url-pattern>/ViewAttendanceDepartment</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ViewDeptAttendanceAction</servlet-name>
+		<url-pattern>/ViewDeptAttendanceAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>EmployeeIdwiseAttendance</servlet-name>
+		<url-pattern>/EmployeeIdwiseAttendance</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ApplyLeaveAction</servlet-name>
+		<url-pattern>/ApplyLeaveAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ViewLeavesAction</servlet-name>
+		<url-pattern>/ViewLeavesAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>LeaveAcceptAction</servlet-name>
+		<url-pattern>/LeaveAcceptAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ViewEmpLeaveAction</servlet-name>
+		<url-pattern>/ViewEmpLeaveAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>DeleteLeaves</servlet-name>
+		<url-pattern>/DeleteLeaves</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>GenerateSalaryAction</servlet-name>
+		<url-pattern>/GenerateSalaryAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ViewDeptSal</servlet-name>
+		<url-pattern>/ViewDeptSal</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ComposeMail</servlet-name>
+		<url-pattern>/ComposeMail</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SendMailAction</servlet-name>
+		<url-pattern>/SendMailAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>OutboxAction</servlet-name>
+		<url-pattern>/OutboxAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>DeleteMails</servlet-name>
+		<url-pattern>/DeleteMails</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SalaryCalculate</servlet-name>
+		<url-pattern>/SalaryCalculate</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ViewUpdateEmployee</servlet-name>
+		<url-pattern>/ViewUpdateEmployee</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UpdateEmployee</servlet-name>
+		<url-pattern>/UpdateEmployee</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>CalculateSalaryAction</servlet-name>
+		<url-pattern>/CalculateSalaryAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ViewMonthlySalary</servlet-name>
+		<url-pattern>/ViewMonthlySalary</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ViewSalaryAction</servlet-name>
+		<url-pattern>/ViewSalaryAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ExportXLS</servlet-name>
+		<url-pattern>/ExportXLS</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ViewMailBody</servlet-name>
+		<url-pattern>/ViewMailBody</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>DeptRegister</servlet-name>
+		<url-pattern>/DeptRegister</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>A</servlet-name>
+		<url-pattern>/A</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ViewEmployeeSalaryAction</servlet-name>
+		<url-pattern>/ViewEmployeeSalaryAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ViewBranchesAction</servlet-name>
+		<url-pattern>/ViewBranchesAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ViewSubjectsAction</servlet-name>
+		<url-pattern>/ViewSubjectsAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ViewUpdateBranchesAction</servlet-name>
+		<url-pattern>/ViewUpdateBranchesAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ViewUpdateCoursesAction</servlet-name>
+		<url-pattern>/ViewUpdateCoursesAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ViewBranchwiseStudentsAction</servlet-name>
+		<url-pattern>/ViewBranchwiseStudentsAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ViewBranchStudentListAction</servlet-name>
+		<url-pattern>/ViewBranchStudentListAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>StudentIdwiseAaction</servlet-name>
+		<url-pattern>/StudentIdwiseAaction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ViewCoursesAction</servlet-name>
+		<url-pattern>/ViewCoursesAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UpdateBranchesAction</servlet-name>
+		<url-pattern>/UpdateBranchesAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UpdateCoursesAction</servlet-name>
+		<url-pattern>/UpdateCoursesAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ViewRegCourseAction</servlet-name>
+		<url-pattern>/ViewRegCourseAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ViewRegBranchAction</servlet-name>
+		<url-pattern>/ViewRegBranchAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AddCourseAction</servlet-name>
+		<url-pattern>/AddCourseAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ViewCourseDetails</servlet-name>
+		<url-pattern>/ViewCourseDetails</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AddBranchAction</servlet-name>
+		<url-pattern>/AddBranchAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>StudentRegisterAction</servlet-name>
+		<url-pattern>/StudentRegisterAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ParentRegistrationAction</servlet-name>
+		<url-pattern>/ParentRegistrationAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AddResultAction</servlet-name>
+		<url-pattern>/AddResultAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ViewResultAction</servlet-name>
+		<url-pattern>/ViewResultAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>StudentClassTimeRecord</servlet-name>
+		<url-pattern>/StudentClassTimeRecord</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>StudentSearchAction</servlet-name>
+		<url-pattern>/StudentSearchAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ViewStudentBranch</servlet-name>
+		<url-pattern>/ViewStudentBranch</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>CounslerRegisterAction</servlet-name>
+		<url-pattern>/CounslerRegisterAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ViewRegistrationRequestStudents</servlet-name>
+		<url-pattern>/ViewRegistrationRequestStudents</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>DeleteStudentsAction</servlet-name>
+		<url-pattern>/DeleteStudentsAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UpdateStudentStatusAction</servlet-name>
+		<url-pattern>/UpdateStudentStatusAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ViewCounslersAction</servlet-name>
+		<url-pattern>/ViewCounslersAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AddStudyCenterAction</servlet-name>
+		<url-pattern>/AddStudyCenterAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ViewStudyCenter</servlet-name>
+		<url-pattern>/ViewStudyCenter</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AddProgrammeAction</servlet-name>
+		<url-pattern>/AddProgrammeAction</url-pattern>
+	</servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewProgrammeAction</servlet-name>
+    <url-pattern>/ViewProgrammeAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddStudyCenterProgrammesAction</servlet-name>
+    <url-pattern>/AddStudyCenterProgrammesAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddViewStudyCenterProgrammesAction</servlet-name>
+    <url-pattern>/AddViewStudyCenterProgrammesAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewStudyCenterProgrammes</servlet-name>
+    <url-pattern>/ViewStudyCenterProgrammes</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddUniversityNewsAction</servlet-name>
+    <url-pattern>/AddUniversityNewsAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewUniversityNewsAction</servlet-name>
+    <url-pattern>/ViewUniversityNewsAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewStudyCentersProgrammes</servlet-name>
+    <url-pattern>/ViewStudyCentersProgrammes</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddAdmissionDetailsAction</servlet-name>
+    <url-pattern>/AddAdmissionDetailsAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewProgrammeeStudycenters</servlet-name>
+    <url-pattern>/ViewProgrammeeStudycenters</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelectProgrammeAdmissionStudent</servlet-name>
+    <url-pattern>/SelectProgrammeAdmissionStudent</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewAdmissionsSelectProgrammes</servlet-name>
+    <url-pattern>/ViewAdmissionsSelectProgrammes</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewStudentCertificates</servlet-name>
+    <url-pattern>/ViewStudentCertificates</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CertificatesVerificationaction</servlet-name>
+    <url-pattern>/CertificatesVerificationaction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>StudyCenterAllotedmentAction</servlet-name>
+    <url-pattern>/StudyCenterAllotedmentAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewStudyCenterAllotements</servlet-name>
+    <url-pattern>/ViewStudyCenterAllotements</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewStudyCenterAllotements1</servlet-name>
+    <url-pattern>/ViewStudyCenterAllotements1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewStudentAllotmentOrder</servlet-name>
+    <url-pattern>/ViewStudentAllotmentOrder</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Example</servlet-name>
+    <url-pattern>/Example</url-pattern>
+  </servlet-mapping>
+
+
+	<welcome-file-list>
+		<welcome-file>Home.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
