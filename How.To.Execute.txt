@@ -1,0 +1,182 @@
+PROJECT EXECUTION PROCEDURE :
+---------------------------
+	----> WITH OUT USING MYECLIPSE
+        	---> USING MYECLIPSE
+
+EXECUTION STEPS:
+----------------
+	I.BACKEND(DATABASE CREATION,IMPORTING)
+	II.FRONTEND(CODE DEPLOYMENT IN SERVER)		
+	III.CONNECTIVITY(FRONTEND TO BACKEND CONNECTIVITY)
+	IV.HOW TO RUN PROJECT
+
+		WITH OUT USING MYECLIPSE:
+		==========================
+I.BACKEND:
+==========
+(BACKEND IS SAME FOR BOTH PROCEDURES)
+	1.Goto start-->run--->sqlplus.exe(sqlplus.exe window)
+	2.login as administrator(enter admin username/password)
+	3.create new user account from admin account
+		sql> create user <USERNAME> identified by <PASSWORD>;
+		user created.
+		sql> grant dba to <USERNAME>;
+		Grant Successed.
+	4.connect newly created user.
+		sql> connect username/password;
+	5.verify user is connected or not.
+		sql>show user;
+		user is "USERNAME"
+	6. check is there any data tables in this user.
+		sql>select * from tab;
+		no rows selected
+			(display list of tables with count).
+	7.Import project database dump file into created user.
+		start->run->imp.exe(window)
+
+		imp.exe window
+		--------------
+		enter username/password;
+
+		Import file: EXPDAT.DMP >c:\abcd\efg\dump.dmp(path is for only example. 
+		you have to give system dump file available path) 
+		
+		(select file drag and drop on the imp.exe window its very easy).
+
+		Import file: EXPDAT.DMP >"c:\abcd\efg\dump.dmp" ( some case having double quotation then remove double qoutations)
+		
+		Enter insert buffer size (minimum is 8192) 30720>(NO NEED BUFFERSIZE PRESS ENTER)
+			
+		List contents of import file only (yes/no): no > no 
+			->PRESS Enter
+			
+		Ignore create error due to object existence (yes/no): > yes
+		->PRESS Enter
+
+		Import grants (yes/no): > yes
+		->PRESS Enter
+
+		Import table data (yes/no): > yes
+		->PRESS Enter
+
+		Import entire export file (yes/no): > yes
+		->PRESS Enter
+		
+		(Import procedure done automatically after that window automatically closed)
+
+	8. GO TO  BACK SQLPLUS.EXE WINDOW
+		SQL>SELECT * FROM TAB;
+			(list of data table with count)
+	9.IF YOU WANT TO SEE THE DATA TABLE AND DATA OF THE TABLE
+		SQL>DESC <TABLENAME>;
+			(it gives list of column names and datatypes)
+		SQL>SELECT * FROM <TABLENAME>;
+		SQL>SEELCT COLNAME1,COLNAME2,COLNAME3... FROM <TABLNAME>;
+========================================================================
+
+II.FRONTEND(CODE DEPLOYMENT):
+============================
+
+1. COPY TOMCAT CODE FROM YOUR PROJECT CODE
+2. PASTE COPIED CODE INTO TOMCAT WEBAPP FOLDER.
+	TOMCAT 6.0/WEBAPPS/(PASTE)PROJECTFOLDER
+
+
+III.CONNECTIVITY:
+================
+1.OPEN TOMCAT/WEBAPP/PROJECTFOLDER(PASTED FOLDER)/WEB-INF/CONFIG/SYSTEM.PROPERTIES
+This file having database connectivity details
+	
+OBSERVE:
+-------
+	driver=oracle.jdbc.driver.OracleDriver
+	url=jdbc:oracle:thin:@<DB-SYSTEM-HOSTNAME>:<PORTNUMBER>:<SERVICENAME>
+	duser=<PROJECT-DB-USERNAME>
+	dpass=<PROJECT-DB-PASSWORD>
+
+
+driver: this is type-4 driver no need to change any thing here.
+    if want to change use any other driver 1,2,3;
+
+url: have to be change system to system;
+	HOSTNAME,PORTNUMBER,SERVICENAME	available in 
+		TNSNAMES.ORA file in ORACLE installed folder.
+		(search file tnsnames.ora in oracle folder).
+
+change url according to database system tnsnames.ora file.
+
+duser:change project database username.
+dpass:change project database password. 
+
+SAVE and CLOSE the SYSTEM.PROPERTIES file
+
+
+
+IV. HOW TO START PROJECT :
+=========================
+1. START TOMCAT SERVER
+	TOMCAT\BIN\SERVICERUNNER.EXE(RUN)
+		INFO: Server startup in 798 ms
+2.OBSERVE SERVER PORT NUMBER
+INFO: Starting Coyote HTTP/1.1 on http-8081
+		PORT NUMBER :8081(IT MAY BE DIFFERENT ONE. 
+			IT IS GIVEN AT THE TIME OF INSTALLATION)
+3.OPEN BROWSER(ANY BROWSER).
+4.TYPE URL IN ADDRESS BAR:
+	
+	http://localhost:8081/Projectname(case sensitive)
+			(or)
+	http://systemname:/8081/Projectname
+			(or)
+	http://ipaddress:/8081/Projectname
+
+
+
+EXECUTION PROCEDURE IN MYCELIPSE:
+=================================
+CODE IMPORT PROCEDURE IN MYECLIPSE :
+-----------------------------------
+MYECLIPSE-->FILE->IMPORT
+		->GENERAL->EXISTING PROJECTS->NEXT
+		->BROWSE->SELECT->SYSTEM MYECLIPSE CODE PATH
+		->SELECT ALL(click)->FINISH.
+
+CONFIGURE CLASSPATH FOR JARS(IF YOU HAVE JAR FILES ERRORS):
+----------------------------
+RIGHT CLICK ON PROJECTNAME->BUILDPATH->CONFIGUREBUILD PATH
+			->LIBRARIES(SELECT)
+			->SELECT ERROR JARs AND REMOVE->REMOVE(CLICK)
+			->ADD REMOVED JAR FILES FROM PROJECT FOLDER.
+
+CONNECTIVITY IN MYECLIPSE:
+--------------------------
+1.OPEN PROJECT(IN PACKAGE EXPLORER)/WEB-ROOT/WEB-INF/CONFIG/SYSTEM.PROPERTIES
+This file having database connectivity details
+	
+	driver=oracle.jdbc.driver.OracleDriver
+	url=jdbc:oracle:thin:@<DB-SYSTEM-HOSTNAME>:<PORTNUMBER>:<SERVICENAME>
+	duser=<PROJECT-DB-USERNAME>
+	dpass=<PROJECT-DB-PASSWORD>
+
+
+driver: this is type-4 driver no need to change any thing here;
+    if want to change use any other driver 1,2,3;
+
+url: have to be change system to system;
+	HOSTNAME,PORTNUMBER,SERVICENAME	available in 
+		TNSNAMES.ORA file in ORACLE installed folder.
+		(search file tnsnames.ora in oracle folder).
+
+change url according to database system tnsnames.ora file.
+
+duser:change project database username.
+dpass:change project database password. 
+
+SAVE and CLOSE the SYSTEM.PROPERTIES file
+
+HOW TO RUN PROJECT:
+-------------------
+1) RIGHT CLICK ON PROJECT---->RUN AS-->MYECLIPSE SERVER APPLICATION.
+(AUTOMATICALLY SERVER WILL RUN AND MYECLIPSE BROWSER ALSO OPENED)
+
+
